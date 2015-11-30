@@ -4,7 +4,9 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.3",
-    "ekko-lightbox": "~3.3.2"
+    "ekko-lightbox": "~3.3.2",
+    "d3": "~3.5.9",
+    "metrics-graphics": "~2.7.0"
   },
   "overrides": {
     "bootstrap-sass": {
