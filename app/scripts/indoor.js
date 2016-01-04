@@ -47,11 +47,12 @@ d3.json(datafolder + '/throom.json', function (data) {
     european_clock: true,
     missing_is_hidden: true,
     aggregate_rollover: true,
+    baselines: [{value: 65, label: 'Target to keep below'}],
     x_accessor: 'at',
     y_accessor: 'value',
     target: '#tempHumidityRoom',
     legend: ['Temp (C)', 'Relative Humidity (%)'],
-    legend_target: '.thlegend'
+    legend_target: '#thlegendroom'
 
   });
 });
@@ -71,7 +72,7 @@ d3.json(datafolder + '/pressure.json', function (data) {
     european_clock: true,
     missing_is_hidden: true,
     area: false,
-    min_y: 930,
+    min_y: 925,
     max_y: 990,
     x_accessor: 'at',
     y_accessor: 'value',
@@ -96,6 +97,7 @@ d3.json(datafolder + '/luminocity.json', function (data) {
     european_clock: true,
     missing_is_hidden: true,
     area: false,
+    baselines: [{value: 600, label: 'Regular light bulb'}],
     min_y_from_data: true,
     x_accessor: 'at',
     y_accessor: 'value',
